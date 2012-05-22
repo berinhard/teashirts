@@ -10,10 +10,10 @@ configure(:development) do |c|
   c.also_reload "*.rb"
 end
 
-set :static_cache_control, [:public, :max_age => 600]
+CACHE_DURATION = 60 * 24
+
+set :static_cache_control, [:public, :max_age => CACHE_DURATION]
 
 before do
-  response.headers['Cache-Control'] = 'public, max-age=600' # 10 in 10 minutes
+  response.headers['Cache-Control'] = 'public, max-age=' + CACHE_DURATION
 end
-
-
