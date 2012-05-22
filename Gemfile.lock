@@ -2,7 +2,6 @@ GEM
   remote: http://rubygems.org/
   specs:
     backports (2.5.3)
-    dalli (2.0.5)
     json (1.7.3)
     monkey-lib (0.5.4)
       backports
@@ -29,7 +28,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dalli
   json
   sinatra
   sinatra-reloader (= 0.5.0)
