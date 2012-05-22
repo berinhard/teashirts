@@ -15,5 +15,5 @@ CACHE_DURATION = 60 * 24
 set :static_cache_control, [:public, :max_age => CACHE_DURATION]
 
 before do
-  response.headers['Cache-Control'] = 'public, max-age=' + CACHE_DURATION
+  response.headers['Cache-Control'] = 'public, max-age=' + CACHE_DURATION.to_s
 end
