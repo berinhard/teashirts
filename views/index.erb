@@ -1,3 +1,15 @@
-<% tshirts.each do |tshirt| %>
-    <p><%= tshirt['name'] %></p>
-<% end %>
+
+<a href="http://camiseteria.com">
+    <img src="images/camiseteria.png" alt="Camiseteria" />
+</a>
+
+<ul class="shirts">
+    <% tshirts.each do |tshirt| %>
+        <li>
+            <a href="<%= tshirt['tshirt_url'] %>">
+                <img src="<%= tshirt['image_url'] %>" alt="<%= tshirt['name'] %>"/>
+            </a>
+        </li>
+    <% end %>
+</ul>
+

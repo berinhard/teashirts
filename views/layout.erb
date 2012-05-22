@@ -1,13 +1,38 @@
-<html>
-
+ <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+    <meta charset=utf-8 />
     <title><%= title() %></title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+    <!-- TODO -->
+    <meta name="google-site-verification" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <meta property='og:title' content=''>
+    <meta property='og:url' content=''>
+    <meta property='og:type' content='website'>
+    <meta property='og:description' content=''>
 </head>
 
 <body>
 
-    <%= yield %>
+    <header>
+        <div>
+            <h1>TeaShirts</h1>
+        </div>
+    </header>
 
+    <div id="content">
+        <div class="container">
+            <%= yield %>
+        </div>
+    </div>
+
+    <!-- TODO: analytics -->
 </body>
 
 </html>
