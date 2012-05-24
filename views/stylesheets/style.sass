@@ -1,25 +1,39 @@
-*
-  :margin 0
-  :padding 0
+@import reset
 
+// colors
+$page-bg-color: #7C8EA6
+
+$header-bg-color: #45648C
+$header-text-color: #FFF
+
+$content-bg-color: #CCC
+
+$shirt-bg-color: #383838
+
+// structure
 body
-  :background #7C8EA6
+  :background $page-bg-color
+  :font-family Verdana
   :text-align center
 
 .container
-  :background #CCCCCC
-  :border-radius 0.5em
-  :margin 1em auto
-  :padding 2em 2em 0.8em 2em
+  :margin 0 auto
   :text-align left
   :width 960px
 
 header
-  :background #45648C
+  :background $header-bg-color
+  :color $header-text-color
   :text-align left
   :margin 0 auto
 
 #content
+  .container
+    :background $content-bg-color
+    :border-radius 0.2em
+    :margin 1em auto
+    :padding .7em 1em 0.8em 1em
+
   .store-logo
     :margin-bottom 1.5em
 
@@ -27,6 +41,7 @@ header
       :height 46px
       :width auto
 
+  // shirts
   ul.shirts 
     :list-style-type none
 
@@ -38,7 +53,7 @@ header
         :text-decoration none
 
         img
-          :border 0.2em solid #383838
+          :border 0.2em solid $shirt-bg-color
           :border-radius 0.5em
           :height auto
           :width 173px
