@@ -10,6 +10,8 @@ configure(:development) do |c|
   c.also_reload "*.rb"
 end
 
+use Rack::Deflater
+
 CACHE_DURATION = 60 * 24
 
 set :static_cache_control, [:public, :max_age => CACHE_DURATION]
