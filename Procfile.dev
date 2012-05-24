@@ -1,0 +1,5 @@
+compass: compass watch --force --no-line-comments --output-style compressed --sass-dir views/stylesheets/ --css-dir public/css/
+
+web: rackup -p $PORT
+
+livereload: guard --no-bundler-warning
