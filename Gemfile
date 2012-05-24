@@ -5,5 +5,15 @@ gem "json"
 gem "sinatra"
 
 group :development do
-  gem 'sinatra-reloader', '0.5.0'
+  gem 'sinatra-reloader'
+
+  gem 'foreman', :require => false
+
+  gem 'compass', :require => false
+  gem 'guard-livereload', :require => false
+  gem 'rb-fsevent', :require => false
+end
+
+group :test do
+  gem 'minitest'
 end
