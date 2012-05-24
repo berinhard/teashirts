@@ -1,9 +1,8 @@
-require "open-uri"
-require "json"
-
 require "sinatra"
 
 require "./helpers"
+
+require "./lib/camiseteria_catalog"
 
 configure(:development) do |c|
   require "sinatra/reloader"
