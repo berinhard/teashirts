@@ -1,0 +1,6 @@
+
+Dependências:
+  * rvm
+  * gems ("make deps" para baixá-las)
+
+Como rodar o projeto em desenvolvimento: make [run]
