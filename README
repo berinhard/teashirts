@@ -1,0 +1,8 @@
+
+Dependências:
+  * rvm
+  * gems ("rake deps" para baixá-las)
+
+Como rodar os testes: rake test
+
+Como rodar o projeto em desenvolvimento: rake [run]

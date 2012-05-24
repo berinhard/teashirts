@@ -1,14 +1,15 @@
-require "open-uri"
-require "json"
-
 require "sinatra"
 
 require "./helpers"
+
+require "./lib/camiseteria_catalog"
 
 configure(:development) do |c|
   require "sinatra/reloader"
   c.also_reload "*.rb"
 end
+
+use Rack::Deflater
 
 CACHE_DURATION = 60 * 24
 
