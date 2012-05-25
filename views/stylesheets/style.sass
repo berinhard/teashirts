@@ -28,6 +28,11 @@ header
   :color $header-text-color
   :text-align left
   :margin 0 auto
+  a
+    :color $header-link-color
+    :text-decoration none
+    &:hover
+      :text-decoration underline
   ul#menu
     :float right
     :font-size .9em
@@ -36,11 +41,6 @@ header
     li
       :display inline
       :margin-left 1.2em
-      a
-        :color $header-link-color
-        :text-decoration none
-        &:hover
-          :text-decoration underline
       &.selected
         a
           :text-decoration underline
@@ -59,8 +59,7 @@ header
       :height 46px
       :width auto
 
-  // shirts
-  ul.shirts 
+  ul.tshirts
     :list-style-type none
 
     li
@@ -74,4 +73,5 @@ header
           :border 0.2em solid $shirt-bg-color
           :border-radius 0.5em
           :height auto
+          :margin-top 0.7em
           :width 173px
