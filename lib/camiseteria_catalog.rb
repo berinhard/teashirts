@@ -9,10 +9,11 @@ require "json"
 class CamiseteriaCatalog
   @@catalog_url = 'http://dl.dropbox.com/u/79616445/camiseteria.json'
 
-  def shirts
+  def shirts(limit=nil)
     content = open(@@catalog_url).read()
     results = JSON::parse(content)
 
+    return results.first(limit) if limit
     results
   end
 end
