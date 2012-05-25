@@ -4,7 +4,9 @@
 $page-bg-color: #7C8EA6
 
 $header-bg-color: #45648C
+$header-link-color: #FFF
 $header-text-color: #FFF
+
 
 $content-bg-color: #CCC
 
@@ -26,6 +28,22 @@ header
   :color $header-text-color
   :text-align left
   :margin 0 auto
+  ul#menu
+    :float right
+    :font-size .9em
+    :list-style-type none
+    :margin-top -1.4em
+    li
+      :display inline
+      :margin-left 1.2em
+      a
+        :color $header-link-color
+        :text-decoration none
+        &:hover
+          :text-decoration underline
+      &.selected
+        a
+          :text-decoration underline
 
 #content
   .container

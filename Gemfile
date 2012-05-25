@@ -3,6 +3,7 @@ source :rubygems
 gem "json"
 
 gem "sinatra"
+gem 'sinatra-simple-navigation'
 
 group :development do
   gem 'sinatra-reloader'
