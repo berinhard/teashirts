@@ -1,14 +1,13 @@
 @import reset
 
+@import "compass/css3/border-radius"
+
 // colors
 $page-bg-color: #FFF
 
 $header-bg-color: #45648C
 $header-link-color: #FFF
 $header-text-color: #FFF
-
-
-$content-bg-color: #CCC
 
 $shirt-bg-color: #383838
 
@@ -37,13 +36,20 @@ header
     :float right
     :font-size .9em
     :list-style-type none
-    :margin-top -1.4em
+    :margin-top -1.45em
     li
+      :background $header-link-color
+      :border-bottom 1px solid $header-bg-color
       :display inline
       :margin-left 1.2em
-      &.selected
+      :padding .4em 1em .2em 1em
+      +border-radius(2px, 2px 2px 0 0)
+      &.selected, &:hover
+        :border-bottom 1px solid $header-link-color
         a
-          :text-decoration underline
+          :text-decoration none
+      a
+        :color $header-bg-color
 
 #content
   .container
