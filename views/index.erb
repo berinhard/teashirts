@@ -1,15 +1,7 @@
 <div class="store-logo">
-    <a href="http://camiseteria.com">
+    <a href="/camiseteria">
         <img src="images/camiseteria.png" alt="Camiseteria" />
     </a>
 </div>
 
-<ul class="shirts">
-    <% tshirts.each do |tshirt| %>
-        <li>
-            <a href="<%= tshirt['tshirt_url'] %>">
-                <img src="<%= tshirt['image_url'] %>" alt="<%= tshirt['name'] %>"/>
-            </a>
-        </li>
-    <% end %>
-</ul>
+<%= erb(:'partials/tshirts_listing', :locals => {:tshirts => tshirts}) %>
