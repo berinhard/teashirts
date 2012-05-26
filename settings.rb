@@ -1,4 +1,5 @@
 require "sinatra"
+require 'sinatra/simple-navigation'
 
 require "./helpers"
 
