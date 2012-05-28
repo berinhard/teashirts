@@ -3,7 +3,7 @@ require 'sinatra/simple-navigation'
 
 require "./helpers"
 
-require "./lib/camiseteria_catalog"
+require "./lib/catalog"
 
 configure(:development) do |c|
   require "sinatra/reloader"
