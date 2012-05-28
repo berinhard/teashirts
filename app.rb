@@ -16,3 +16,11 @@ get "/camiseteria" do
     :tshirts => tshirts
   }
 end
+
+get "/chico-rei" do
+  tshirts = ChicoReiCatalog.new.shirts()
+
+  erb :'store/chico-rei', :locals => {
+    :tshirts => tshirts
+  }
+end
